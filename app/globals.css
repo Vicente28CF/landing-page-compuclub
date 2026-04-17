@@ -1,0 +1,170 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Brand palette */
+  --brand-navy: #1b3a6b;
+  --brand-navy-600: #16305a;
+  --brand-navy-800: #0f2545;
+  --brand-orange: #e84c1e;
+  --brand-orange-600: #cf3f16;
+  --brand-surface: #f8f9fa;
+  --brand-white: #ffffff;
+
+  /* Semantic tokens (light) */
+  --background: #ffffff;
+  --foreground: #0f2545;
+  --card: #ffffff;
+  --card-foreground: #0f2545;
+  --popover: #ffffff;
+  --popover-foreground: #0f2545;
+  --primary: var(--brand-navy);
+  --primary-foreground: #ffffff;
+  --secondary: var(--brand-surface);
+  --secondary-foreground: var(--brand-navy);
+  --muted: var(--brand-surface);
+  --muted-foreground: #4a5a72;
+  --accent: var(--brand-orange);
+  --accent-foreground: #ffffff;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: #ffffff;
+  --border: #e4e8ee;
+  --input: #e4e8ee;
+  --ring: var(--brand-navy);
+  --radius: 0.875rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-body), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-heading), 'Nunito', ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-navy-600: var(--brand-navy-600);
+  --color-brand-navy-800: var(--brand-navy-800);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-orange-600: var(--brand-orange-600);
+  --color-brand-surface: var(--brand-surface);
+
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 3px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+  --radius-2xl: calc(var(--radius) + 12px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply bg-background;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Scroll reveal */
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
+      transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .float-slow {
+    animation: float-slow 7s ease-in-out infinite;
+  }
+  .float-medium {
+    animation: float-slow 5.5s ease-in-out infinite;
+  }
+  .float-fast {
+    animation: float-slow 4s ease-in-out infinite;
+  }
+
+  .pulse-ring {
+    animation: pulse-ring 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(3deg);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Accessibility: respect the user's motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
