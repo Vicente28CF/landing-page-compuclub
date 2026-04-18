@@ -70,9 +70,8 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 flex items-center justify-center gap-3">
-          {/* TODO: Replace # with real Facebook URL */}
           <Link
-            href="#"
+            href="https://www.facebook.com/people/CompuClub/61579701570982/"
             aria-label="Facebook"
             target="_blank"
             rel="noopener noreferrer"
@@ -80,9 +79,8 @@ export function SiteFooter() {
           >
             <Facebook className="h-5 w-5" aria-hidden="true" />
           </Link>
-          {/* TODO: Replace 521XXXXXXXXXX with real WhatsApp number */}
           <Link
-            href="https://wa.me/521XXXXXXXXXX"
+            href="https://wa.me/523321916387?text=Hola%20CompuClub%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20cursos"
             aria-label="WhatsApp"
             target="_blank"
             rel="noopener noreferrer"

@@ -69,9 +69,8 @@ export function SocialLocation() {
 
             <div className="mt-6 flex-1" />
 
-            {/* TODO: Replace # with the real Facebook page URL */}
             <Link
-              href="#"
+              href="https://www.facebook.com/people/CompuClub/61579701570982/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-[#1877F2] px-5 py-2.5 text-sm font-semibold text-white transition-all hover:scale-[1.02] hover:bg-[#166FE0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1877F2]"
@@ -105,20 +104,27 @@ export function SocialLocation() {
               </div>
             </div>
 
-            {/* TODO: Replace this placeholder with an embedded Google Maps iframe */}
-            <div
-              className="mt-6 flex aspect-video w-full items-center justify-center rounded-xl border-2 border-dashed border-brand-orange/40 bg-brand-surface text-center text-sm text-muted-foreground"
-              role="img"
-              aria-label="Placeholder para el mapa de Google Maps"
-            >
-              <div className="px-4">
-                <MapPin
-                  className="mx-auto h-8 w-8 text-brand-orange/70"
-                  strokeWidth={1.75}
-                  aria-hidden="true"
-                />
-                <p className="mt-2">{"[ Mapa — agregar iframe de Google Maps ]"}</p>
-              </div>
+            <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-xl sm:aspect-[16/10] lg:aspect-[4/3]">
+              <iframe
+                title="Ubicación de CompuClub en Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14974.788978556771!2d-103.57668508623046!3d20.229898161103012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8425f5b7f8fd98a3%3A0xd0f22754e8a54280!2sCompuClub!5e0!3m2!1ses-419!2smx!4v1776542577467!5m2!1ses-419!2smx"
+                className="absolute inset-0 h-full w-full border-0"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+
+            <div className="mt-5 flex justify-center sm:justify-start">
+              <Link
+                href="https://maps.app.goo.gl/JATCh7o141CtmpXJ6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 rounded-full bg-brand-orange px-4 py-2 text-sm font-semibold text-white transition-all hover:scale-[1.03] hover:bg-brand-orange-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-orange"
+              >
+                Cómo llegar
+                <ExternalLink className="h-4 w-4" aria-hidden="true" />
+              </Link>
             </div>
           </motion.article>
         </div>

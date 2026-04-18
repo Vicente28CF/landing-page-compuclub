@@ -165,9 +165,8 @@ export function EnrollmentSteps() {
             whileTap={{ scale: 0.95 }}
             className="rounded-full"
           >
-            {/* TODO: Replace with real WhatsApp number */}
             <Link
-              href="https://wa.me/521XXXXXXXXXX"
+              href="https://wa.me/523321916387?text=Hola%20CompuClub%2C%20quiero%20inscribirme.%20%C2%BFMe%20pueden%20orientar%20sobre%20el%20proceso%3F"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-orange px-8 py-4 font-heading text-base font-bold text-white shadow-lg shadow-brand-orange/30 transition-colors hover:bg-brand-orange-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:text-lg"

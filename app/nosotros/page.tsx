@@ -408,9 +408,8 @@ export default function NosotrosPage() {
             >
               Ir al inicio
             </Link>
-            {/* TODO: Replace 521XXXXXXXXXX with the real WhatsApp number */}
             <Link
-              href="https://wa.me/521XXXXXXXXXX"
+              href="https://wa.me/523321916387?text=Hola%20CompuClub%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20cursos"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-brand-navy px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:scale-[1.03] hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-navy sm:text-base"

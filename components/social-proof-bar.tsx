@@ -22,7 +22,7 @@ const metrics: Metric[] = [
   },
   {
     prefix: "⭐ ",
-    target: 4.9,
+    target: 5.0,
     label: "Calificación en Google",
     format: (n) => n.toFixed(1),
     duration: 1200,
@@ -33,7 +33,7 @@ const metrics: Metric[] = [
     duration: 800,
   },
   {
-    target: 98,
+    target: 100,
     suffix: "%",
     label: "Padres satisfechos",
     duration: 1200,

@@ -9,27 +9,31 @@ import { Reveal } from "@/components/reveal"
 const faqs = [
   {
     q: "¿Los alumnos necesitan tener computadora en casa?",
-    a: "No. Todos los alumnos trabajan en los equipos del centro durante sus clases. No necesitas ningún equipo propio para inscribirte.",
+    a: "No. Todos los alumnos trabajan en los equipos del centro durante sus clases. Aun así, si cuentan con una computadora en casa pueden aprovechar Google Classroom para repasar el material y entregar tareas desde donde estén.",
   },
   {
     q: "¿Qué pasa si mi hijo se atrasa o falta a clases?",
-    a: "Trabajamos con grupos pequeños para poder dar atención personalizada. Si un alumno falta, coordinamos para que pueda retomar el contenido sin quedarse atrás.",
+    a: "Trabajamos con grupos pequeños para poder dar atención personalizada. Si un alumno falta, subimos el material a Google Classroom y coordinamos con el instructor para que pueda retomar el contenido en la siguiente clase sin quedarse atrás.",
+  },
+  {
+    q: "¿Qué pasa si mi hijo no va un día, se pierde el dinero de esa clase?",
+    a: "Las clases se pagan por semana todos los lunes ($300 por semana, que incluye 3 clases). Si por alguna razón tu hijo no puede asistir un día, solo necesitas avisarnos con anticipación por WhatsApp y buscamos cómo reponer esa clase o ajustar el pago. Si no se avisa antes, esa clase se considera tomada y no se puede recuperar el costo.",
   },
   {
     q: "¿Puedo inscribirme a mitad del curso?",
-    a: "[AGREGAR RESPUESTA — ejemplo: Sí, aceptamos inscripciones en cualquier momento del ciclo, evaluamos el nivel del alumno y lo integramos al grupo más adecuado.]",
+    a: "Sí. Aceptamos inscripciones en cualquier momento. Evaluamos el nivel del alumno al entrar y lo integramos al grupo más adecuado para que avance a su ritmo y sin frustrarse.",
   },
   {
-    q: "¿Hay descuento por inscribir a varios hermanos?",
-    a: "[AGREGAR RESPUESTA — ejemplo: Sí, ofrecemos X% de descuento a partir del segundo hermano inscrito. Pregúntanos por WhatsApp.]",
+    q: "¿Cuánto cuesta y cómo se paga?",
+    a: "El costo es de $300 por semana (solo $100 por clase, 3 clases a la semana). El pago se realiza todos los lunes antes de empezar la semana, en efectivo en el centro o por transferencia.",
   },
   {
     q: "¿Las clases son presenciales o en línea?",
-    a: "[AGREGAR RESPUESTA — confirmar modalidad: presencial / en línea / híbrido.]",
+    a: "Las clases son 100% presenciales en nuestro centro. Usamos Google Classroom como apoyo para compartir material, subir tareas y dar seguimiento, pero la enseñanza y la práctica se hacen siempre en persona con el instructor.",
   },
   {
     q: "¿Qué incluye exactamente el curso de adultos con celular?",
-    a: "Además del contenido de computación básica, dedicamos módulos especiales a dominar el smartphone: WhatsApp, videollamadas, redes sociales, apps bancarias, búsqueda segura en internet y cómo evitar fraudes digitales.",
+    a: "Además del contenido de computación básica (Windows, Word, correo y documentos), dedicamos módulos especiales a dominar el smartphone: WhatsApp avanzado, videollamadas por Zoom y Meet, redes sociales, apps bancarias con seguridad, Google Maps, uso de Inteligencia Artificial como asistente personal y cómo detectar fraudes y estafas digitales antes de caer en ellas.",
   },
 ]
 

@@ -9,26 +9,34 @@ type Testimonial = {
   name: string
   role: string
   initials: string
+  avatarClass: string
 }
 
 const testimonials: Testimonial[] = [
   {
-    quote: "[TESTIMONIO REAL — agregar texto del padre/madre]",
-    name: "[Nombre del papá/mamá]",
-    role: "Mamá de alumno, Curso Básico Niños",
-    initials: "NM",
+    quote:
+      "Decidí inscribirme en el curso de Excel para mejorar en mi trabajo y la experiencia superó mis expectativas. Los instructores explican paso a paso y tienen una paciencia increíble.",
+    name: "Martha Guadalupe Ramírez",
+    role: "Alumna, Curso Básico para Adultos",
+    initials: "MR",
+    avatarClass: "bg-brand-orange text-white",
   },
   {
-    quote: "[TESTIMONIO REAL — agregar texto del padre/madre]",
-    name: "[Nombre del papá/mamá]",
-    role: "Papá de alumno, Curso Intermedio",
-    initials: "NP",
+    quote:
+      "Lo que más me gusta de CompuClub es la seguridad y el profesionalismo. Sé que mis hijos están aprendiendo habilidades reales para su futuro en un lugar confiable.",
+    name: "Carlos Mendoza Herrera",
+    role: "Papá de alumno, Curso Básico Niños",
+    initials: "CM",
+    avatarClass: "bg-brand-navy text-white",
   },
   {
-    quote: "[TESTIMONIO REAL — agregar texto]",
-    name: "[Nombre del alumno adulto]",
-    role: "Alumna, Curso Adultos",
-    initials: "NA",
+    quote:
+      "Altamente recomendado para niños de todas las edades. El equipo de CompuClub sabe cómo mantener su interés y enseñarles tecnología de vanguardia.",
+    name: "Sofía Torres Villanueva",
+    role: "Mamá de alumno, Curso Intermedio",
+    initials: "ST",
+    avatarClass:
+      "bg-[linear-gradient(135deg,var(--brand-orange)_0%,var(--brand-navy)_100%)] text-white",
   },
 ]
 
@@ -136,7 +144,7 @@ export function Testimonials() {
 
               <div className="mt-5 flex items-center gap-3 border-t border-border pt-5">
                 <div
-                  className="flex h-12 w-12 flex-none items-center justify-center rounded-full bg-brand-navy/10 font-heading text-sm font-bold text-brand-navy ring-2 ring-brand-orange/30"
+                  className={`flex h-12 w-12 flex-none items-center justify-center rounded-full font-heading text-sm font-bold ring-2 ring-brand-orange/30 ${t.avatarClass}`}
                   aria-hidden="true"
                 >
                   {t.initials}
@@ -150,7 +158,6 @@ export function Testimonials() {
                   </p>
                 </div>
               </div>
-              {/* silence unused index warning on server build */}
               <span className="sr-only">Testimonio {i + 1}</span>
             </motion.article>
           ))}

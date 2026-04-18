@@ -143,9 +143,8 @@ export function Hero() {
             </Link>
           </motion.div>
           <motion.div variants={fadeUp}>
-            {/* TODO: Replace 521XXXXXXXXXX with the real WhatsApp number */}
             <Link
-              href="https://wa.me/521XXXXXXXXXX"
+              href="https://wa.me/523321916387?text=Hola%20CompuClub%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20cursos"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex w-full items-center justify-center rounded-full border border-white/60 bg-transparent px-6 py-3 text-sm font-semibold text-white transition-all hover:scale-[1.03] hover:bg-white hover:text-brand-navy sm:w-auto sm:text-base"

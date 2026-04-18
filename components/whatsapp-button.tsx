@@ -56,7 +56,6 @@ export function WhatsAppButton() {
           )}
         </AnimatePresence>
 
-        {/* TODO: Replace 521XXXXXXXXXX with the real WhatsApp number */}
         <motion.div
           whileHover={{ scale: 1.12 }}
           whileTap={{ scale: 0.92 }}
@@ -64,7 +63,7 @@ export function WhatsAppButton() {
           className="relative"
         >
           <Link
-            href="https://wa.me/521XXXXXXXXXX"
+            href="https://wa.me/523321916387?text=Hola%20CompuClub%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20cursos"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Abrir chat de WhatsApp"
