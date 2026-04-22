@@ -13,23 +13,25 @@ export function About() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid items-center gap-10 md:grid-cols-[auto_1fr] md:gap-14">
-          {/* Photo */}
+          {/* Contenedor de imagen — círculo decorativo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-            className="mx-auto md:mx-0"
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="relative flex items-center justify-center"
           >
-            <div className="relative">
-              <div className="h-48 w-48 overflow-hidden rounded-full border-4 border-brand-orange bg-white ring-4 ring-brand-orange ring-offset-4 ring-offset-brand-surface sm:h-56 sm:w-56 md:h-52 md:w-52 lg:h-60 lg:w-60">
-                <Image
-                  src="/gallery/instructores.jpeg"
-                  alt="Gabriela López y Vicente Cayetano"
-                  fill
-                  className="object-cover object-center"
-                />
-              </div>
+            {/* Círculo decorativo de fondo — el naranja */}
+            <div className="absolute h-72 w-72 rounded-full bg-orange-500/20 -z-10 scale-110" />
+
+            {/* Imagen recortada en círculo */}
+            <div className="relative h-64 w-64 overflow-hidden rounded-full ring-4 ring-orange-500/30 shadow-xl">
+              <Image
+                src="/gallery/instructores.jpeg"
+                alt="Gabriela López y Vicente Cayetano"
+                fill
+                className="object-cover object-top"
+              />
             </div>
           </motion.div>
 
@@ -52,7 +54,7 @@ export function About() {
             </p>
 
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              {"Soy Gaby, Lic. en Arquitectura, y yo Vicente, Ingeniero en Ciencias Computacionales. radicamos en Zacoalco de Torres, Jalisco, y ahí nacimos juntos para compartir nuestro conocimiento tecnológico con toda la comunidad. Nos comprometemos a cerrar la brecha digital y llevar la tecnología a cada rincón de nuestro bello municipio."}
+              {"Soy Gaby, Arquitecta, y yo Vicente, Ingeniero en Computación. Nacimos en Zacoalco de Torres, Jalisco — y ahí nacimos juntos también como CompuClub. Creemos que la tecnología no debería tener fronteras. Que cada persona en nuestro municipio merece aprender, crear y conectar con el mundo digital, sin importar su edad ni experiencia previa. CompuClub es nuestra forma de devolver algo a la comunidad que nos vio crecer."}
             </p>
 
             <p className="mt-8 text-sm text-brand-navy/60">
