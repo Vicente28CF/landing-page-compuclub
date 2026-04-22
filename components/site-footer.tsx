@@ -57,15 +57,15 @@ export function SiteFooter() {
         <div className="mt-10 grid grid-cols-1 gap-4 text-sm text-white/80 sm:grid-cols-3">
           <div className="flex items-center justify-center gap-2 sm:justify-start">
             <Phone className="h-4 w-4 text-brand-orange" aria-hidden="true" />
-            <span>{"[Teléfono]"}</span>
+            <span>332 191 6387</span>
           </div>
           <div className="flex items-center justify-center gap-2">
             <Mail className="h-4 w-4 text-brand-orange" aria-hidden="true" />
-            <span>{"[Email]"}</span>
+            <span>vicente28cf@gmail.com</span>
           </div>
           <div className="flex items-center justify-center gap-2 sm:justify-end">
             <MapPin className="h-4 w-4 text-brand-orange" aria-hidden="true" />
-            <span>{"[Dirección]"}</span>
+            <span>José Maria Mercado #73, Zacoalco de Torres, Jalisco</span>
           </div>
         </div>
 

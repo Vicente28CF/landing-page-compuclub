@@ -1,8 +1,9 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "framer-motion"
-import { ArrowRight, UserRound } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 export function About() {
   return (
@@ -21,17 +22,13 @@ export function About() {
             className="mx-auto md:mx-0"
           >
             <div className="relative">
-              <div className="flex h-48 w-48 items-center justify-center overflow-hidden rounded-full border-2 border-dashed border-orange-300 bg-orange-50 ring-4 ring-brand-orange ring-offset-4 ring-offset-brand-surface sm:h-56 sm:w-56 md:h-52 md:w-52 lg:h-60 lg:w-60">
-                <div className="text-center">
-                  <UserRound
-                    className="mx-auto h-14 w-14 text-brand-orange/70"
-                    strokeWidth={1.5}
-                    aria-hidden="true"
-                  />
-                  <p className="mt-1 px-4 text-xs font-medium text-brand-orange/90">
-                    {"[FOTO DEL INSTRUCTOR]"}
-                  </p>
-                </div>
+              <div className="h-48 w-48 overflow-hidden rounded-full border-2 border-dashed border-orange-300 bg-orange-50 ring-4 ring-brand-orange ring-offset-4 ring-offset-brand-surface sm:h-56 sm:w-56 md:h-52 md:w-52 lg:h-60 lg:w-60">
+                <Image
+                  src="/gallery/instructores.jpeg"
+                  alt="Gabriela López y Vicente Cayetano"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </motion.div>
@@ -45,16 +42,17 @@ export function About() {
             className="text-center md:text-left"
           >
             <h2 className="font-heading text-3xl font-extrabold text-brand-navy text-balance sm:text-4xl">
-              [Tu nombre]
+              Nosotros
             </h2>
             <p className="mt-2 text-base font-semibold text-brand-orange">
-              Fundador &amp; Instructor Principal, CompuClub
+              Gabriela López & Vicente Cayetano
+            </p>
+            <p className="mt-2 text-sm font-semibold text-brand-orange">
+              Fundadores e Instructores, CompuClub
             </p>
 
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              {
-                "[AGREGAR BIO — ejemplo: Soy [nombre], con X años de experiencia enseñando computación en Guadalajara. Fundé CompuClub porque creo que el acceso a la tecnología no debería ser un privilegio sino un derecho para toda nuestra comunidad.]"
-              }
+              {"Soy Gaby, soy Lic. en Arquitectura. Yo Vicente, soy Ingeniero en Ciencias Computacionales. radicamos en Zacoalco de Torres, Jal. y ahí nacimos juntos para compartir nuestro conocimiento tecnológico con toda la comunidad."}
             </p>
 
             <p className="mt-8 text-sm text-brand-navy/60">
