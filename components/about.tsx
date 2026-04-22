@@ -54,7 +54,7 @@ export function About() {
             </p>
 
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              {"Soy Gaby, Arquitecta originaria de Zacoalco de Torres, Jalisco, y yo Vicente, Ingeniero en Computación. Ella es de ahí — y ahí nacimos juntos también como CompuClub. Creemos que la tecnología no debería tener fronteras. Que cada persona en nuestro municipio merece aprender, crear y conectar con el mundo digital, sin importar su edad ni experiencia previa. CompuClub es nuestra forma de devolver algo a la comunidad que nos vio crecer."}
+              {"Soy Gaby, Arquitecta, y yo Vicente, Ingeniero en Computación. Vivimos en Zacoalco de Torres, Jalisco — y es aquí donde también nació nuestro proyecto juntos: CompuClub. Creemos que la tecnología no debería tener fronteras. Que cada persona en nuestra comunidad merece aprender, crear y conectar con el mundo digital, sin importar su edad ni experiencia previa. CompuClub es nuestra forma de devolver algo a nuestra comunidad."}
             </p>
 
             <p className="mt-8 text-sm text-brand-navy/60">
