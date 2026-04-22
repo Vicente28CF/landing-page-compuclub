@@ -22,12 +22,12 @@ export function About() {
             className="mx-auto md:mx-0"
           >
             <div className="relative">
-              <div className="h-48 w-48 overflow-hidden rounded-full border-2 border-dashed border-orange-300 bg-orange-50 ring-4 ring-brand-orange ring-offset-4 ring-offset-brand-surface sm:h-56 sm:w-56 md:h-52 md:w-52 lg:h-60 lg:w-60">
+              <div className="h-48 w-48 overflow-hidden rounded-full border-4 border-brand-orange bg-white ring-4 ring-brand-orange ring-offset-4 ring-offset-brand-surface sm:h-56 sm:w-56 md:h-52 md:w-52 lg:h-60 lg:w-60">
                 <Image
                   src="/gallery/instructores.jpeg"
                   alt="Gabriela López y Vicente Cayetano"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                 />
               </div>
             </div>
@@ -52,7 +52,7 @@ export function About() {
             </p>
 
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              {"Soy Gaby, soy Lic. en Arquitectura. Yo Vicente, soy Ingeniero en Ciencias Computacionales. radicamos en Zacoalco de Torres, Jal. y ahí nacimos juntos para compartir nuestro conocimiento tecnológico con toda la comunidad."}
+              {"Soy Gaby, Lic. en Arquitectura, y yo Vicente, Ingeniero en Ciencias Computacionales. radicamos en Zacoalco de Torres, Jalisco, y ahí nacimos juntos para compartir nuestro conocimiento tecnológico con toda la comunidad. Nos comprometemos a cerrar la brecha digital y llevar la tecnología a cada rincón de nuestro bello municipio."}
             </p>
 
             <p className="mt-8 text-sm text-brand-navy/60">
