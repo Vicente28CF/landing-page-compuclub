@@ -5,12 +5,40 @@ import { ImageIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { EASE_OUT, viewportOnce } from "@/lib/motion-variants"
 
-type FlyerBadge = "NUEVO" | "EN CURSO"
+import Image from "next/image"
 
-const flyers: { badge: FlyerBadge }[] = [
-  { badge: "NUEVO" },
-  { badge: "EN CURSO" },
-  { badge: "NUEVO" },
+type FlyerBadge = "NUEVO" | "EN CURSO" | "FINALIZADO"
+
+type FlyerData = {
+  badge: FlyerBadge
+  src: string
+  alt: string
+  title: string
+  description: string
+}
+
+const flyers: FlyerData[] = [
+  {
+    badge: "NUEVO",
+    src: "/gallery/curso-adultos.jpeg",
+    alt: "Curso de Computación para Adultos",
+    title: "Computación para Adultos",
+    description: "Curso diseñado para adultos que quieren aprender desde lo básico",
+  },
+  {
+    badge: "EN CURSO",
+    src: "/gallery/curso-niños-en-curso.jpeg",
+    alt: "Curso de Computación para Niños en curso",
+    title: "Computación para Niños",
+    description: "Curso para niños de 8 a 12 años aprendiendo tecnología",
+  },
+  {
+    badge: "FINALIZADO",
+    src: "/gallery/curso-niños-finalizado.jpeg",
+    alt: "Curso de Computación para Niños finalizado",
+    title: "Niños Graduates",
+    description: "Nuestros pequeños graduados del curso de computación",
+  },
 ]
 
 export function Flyers() {
@@ -58,7 +86,7 @@ export function Flyers() {
               }}
               className="min-w-[80%] snap-center sm:min-w-[60%] md:min-w-0"
             >
-              <FlyerCard badge={flyer.badge} />
+              <FlyerCard flyer={flyer} />
             </motion.div>
           ))}
         </motion.div>
@@ -67,10 +95,10 @@ export function Flyers() {
   )
 }
 
-function FlyerCard({ badge }: { badge: FlyerBadge }) {
-  const isNew = badge === "NUEVO"
+function FlyerCard({ flyer }: { flyer: FlyerData }) {
+  const isNew = flyer.badge === "NUEVO"
   return (
-    <article className="relative flex aspect-[3/4] w-full flex-col items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-brand-orange/50 bg-brand-surface p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <article className="relative flex aspect-[3/4] w-full flex-col items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-brand-orange/50 bg-brand-surface shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       <motion.span
         animate={isNew ? { scale: [1, 1.08, 1] } : undefined}
         transition={
@@ -79,24 +107,30 @@ function FlyerCard({ badge }: { badge: FlyerBadge }) {
             : undefined
         }
         className={cn(
-          "absolute top-4 left-4 rounded-full px-3 py-1 text-xs font-bold text-white shadow-md",
+          "absolute top-4 left-4 z-10 rounded-full px-3 py-1 text-xs font-bold text-white shadow-md",
           isNew ? "bg-brand-orange" : "bg-brand-navy",
         )}
       >
-        {badge}
+        {flyer.badge}
       </motion.span>
 
-      <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-orange/10 text-brand-orange ring-1 ring-brand-orange/20">
-        <ImageIcon className="h-8 w-8" strokeWidth={1.75} aria-hidden="true" />
+      <div className="relative flex h-full w-full items-center justify-center overflow-hidden">
+        <Image
+          src={flyer.src}
+          alt={flyer.alt}
+          fill
+          className="object-cover"
+        />
       </div>
 
-      <p className="mt-5 max-w-[80%] text-center text-sm font-medium text-muted-foreground sm:text-base">
-        {"[FLYER — arrastra o sube tu imagen aquí]"}
-      </p>
-
-      <p className="mt-2 text-center text-xs text-muted-foreground/70">
-        Formato recomendado: 1080 × 1350 px
-      </p>
+      <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4 pt-12">
+        <p className="text-center text-sm font-bold text-white">
+          {flyer.title}
+        </p>
+        <p className="mt-1 text-center text-xs text-white/80">
+          {flyer.description}
+        </p>
+      </div>
     </article>
   )
 }

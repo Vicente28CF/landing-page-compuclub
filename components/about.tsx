@@ -28,9 +28,9 @@ export function About() {
             <div className="relative h-64 w-64 overflow-hidden rounded-full ring-4 ring-orange-500/30 shadow-xl">
               <Image
                 src="/gallery/instructores.jpeg"
-                alt="Gabriela López y Vicente Cayetano"
+                alt="Vicente Cayetano y Gabriela López"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-[center_30%]"
               />
             </div>
           </motion.div>
@@ -47,14 +47,21 @@ export function About() {
               Nosotros
             </h2>
             <p className="mt-2 text-base font-semibold text-brand-orange">
-              Gabriela López & Vicente Cayetano
+              Vicente Cayetano & Gabriela López
             </p>
             <p className="mt-2 text-sm font-semibold text-brand-orange">
-              Fundadores e Instructores, CompuClub
+              Fundadores de <strong>CompuClub</strong> · Ingeniero en Computación & Maquillista Profesional
             </p>
 
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              {"Soy Gaby, Arquitecta, y yo Vicente, Ingeniero en Computación. Vivimos en Zacoalco de Torres, Jalisco — y es aquí donde también nació nuestro proyecto juntos: CompuClub. Creemos que la tecnología no debería tener fronteras. Que cada persona en nuestra comunidad merece aprender, crear y conectar con el mundo digital, sin importar su edad ni experiencia previa. CompuClub es nuestra forma de devolver algo a nuestra comunidad."}
+              Vicente Cayetano & Gabriela López — vivimos en Zacoalco de Torres, Jalisco,
+y es aquí donde también nació nuestro proyecto juntos: <strong>CompuClub</strong>.
+
+Creemos que la tecnología no debería tener fronteras. Que cada persona
+en nuestra comunidad merece aprender, crear y conectar con el mundo digital,
+sin importar su edad ni experiencia previa.
+
+<strong>CompuClub</strong> es nuestra forma de devolver algo a nuestra comunidad.
             </p>
 
             <p className="mt-8 text-sm text-brand-navy/60">
