@@ -34,7 +34,7 @@ export function Hero() {
             className="inline-flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-2 shadow-lg ring-1 ring-white/20"
           >
             <Image
-              src="/logo.png"
+              src="/gallery/logo.png"
               alt="CompuClub logo"
               width={180}
               height={48}

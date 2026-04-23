@@ -22,7 +22,7 @@ export function SiteFooter() {
         <div className="flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-2 shadow-lg ring-1 ring-white/10">
             <Image
-              src="/logo.png"
+              src="/gallery/logo.png"
               alt="CompuClub logo"
               width={160}
               height={44}

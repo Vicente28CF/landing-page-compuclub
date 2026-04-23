@@ -30,6 +30,10 @@ export const metadata: Metadata = {
     "computación para adultos",
     "clases de computación México",
   ],
+  icons: {
+    icon: "/gallery/logo.png",
+    apple: "/gallery/logo.png",
+  },
   openGraph: {
     title: "CompuClub · Aprende computación y transforma tu futuro",
     description:
