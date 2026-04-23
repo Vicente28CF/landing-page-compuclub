@@ -1,4 +1,3 @@
-import { AcademicImpact } from "@/components/academic-impact"
 import { About } from "@/components/about"
 import { AdultEmotionalHook } from "@/components/adult-emotional-hook"
 import { Courses } from "@/components/courses"
@@ -25,7 +24,6 @@ export default function HomePage() {
       <Courses />
       <Testimonials />
       <EnrollmentSteps />
-      <AcademicImpact />
       <AdultEmotionalHook />
       <DayAtCompuClub />
       <About />

@@ -37,11 +37,10 @@ export function AdultEmotionalHook() {
           className="text-center md:text-left"
         >
           <h2 className="font-heading text-2xl leading-tight text-white italic text-balance sm:text-3xl md:text-4xl lg:text-5xl">
-            ¿Te ha pasado que tu hijo o nieto tiene que ayudarte con el teléfono?
+            ¿Te cuesta trabajo usar tu celular o computadora?
           </h2>
           <p className="mt-5 text-base leading-relaxed text-white/80 text-pretty sm:text-lg">
-            Eso se acaba aquí. En CompuClub te enseñamos a dominar tu celular y computadora con
-            paciencia, sin tecnicismos y a tu ritmo.
+            En CompuClub te enseñamos con paciencia, sin tecnicismos y a tu ritmo.
           </p>
 
           <div className="mt-8 flex flex-col items-center gap-4 md:items-start">
