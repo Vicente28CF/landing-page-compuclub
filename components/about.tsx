@@ -55,13 +55,10 @@ export function About() {
 
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
               Vicente Cayetano & Gabriela López — vivimos en Zacoalco de Torres, Jalisco,
-y es aquí donde también nació nuestro proyecto juntos: <strong>CompuClub</strong>.
-
-Creemos que la tecnología no debería tener fronteras. Que cada persona
-en nuestra comunidad merece aprender, crear y conectar con el mundo digital,
-sin importar su edad ni experiencia previa.
-
-<strong>CompuClub</strong> es nuestra forma de devolver algo a nuestra comunidad.
+              y es aquí donde también nació nuestro proyecto juntos: <strong>CompuClub</strong>. Creemos que
+              la tecnología no debería tener fronteras. Que cada persona en nuestra comunidad merece
+              aprender, crear y conectar con el mundo digital, sin importar su edad ni experiencia previa.
+              <strong>CompuClub</strong> es nuestra forma de devolver algo a nuestra comunidad.
             </p>
 
             <p className="mt-8 text-sm text-brand-navy/60">

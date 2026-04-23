@@ -20,19 +20,19 @@ const items: Item[] = [
     icon: GraduationCap,
     title: "Mejora tu rendimiento escolar",
     description:
-      "Aprenderás herramientas digitales que te ayudarán en todas tus materias: buscar información, hacer presentaciones, organizar tareas y mucho más.",
+      "Herramientas digitales para todas tus materias.",
   },
   {
     icon: Lightbulb,
     title: "Aprende haciendo",
     description:
-      "Clases 100% prácticas donde cada alumno trabaja en su propio equipo con proyectos reales desde el día uno.",
+      "Clases 100% prácticas con proyectos reales.",
   },
   {
     icon: Users,
     title: "Para todas las edades",
     description:
-      "Desde niños de 9 años hasta adultos. Grupos pequeños para atención personalizada.",
+      "Grupos pequeños y atención personalizada.",
   },
 ]
 

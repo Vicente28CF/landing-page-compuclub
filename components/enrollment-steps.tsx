@@ -28,7 +28,7 @@ const steps: Step[] = [
     icon: Rocket,
     title: "¡Ven a tu primera clase!",
     description:
-      "Sin letra chica. Si en las primeras 2 semanas no ves progreso, te devolvemos tu dinero",
+      "Si en la primera semana no te convence, te devolvemos el dinero.",
   },
 ]
 
